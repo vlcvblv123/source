@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/seller.css">
+</head>
+<body>
+
+    <img src="img/loader.gif" class="loader" alt="">
+    <div class="alert-box">
+        <img src="img/error.png" alt="" class="alert-img">
+        <p class="alert-msg">Error message</p>
+    </div>
+
+    <img src="img/dark-logo.png" alt="" class="logo">
+
+    <div class="become-seller hide">
+        <p class="heading">become a seller</p>
+
+        <p class="des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur sapiente dolores distinctio
+            accusantium? Numquam deserunt illum laudantium! Amet nisi obcaecati rerum cum dolore vero dicta hic culpa
+            illum natus. </p>
+        <button class="btn" id="apply-btn">apply for seller account</button>
+    </div>
+
+
+    <div class="apply-form hide">
+        <input type="text" id="business-names" placeholder="business name / company name / shop name">
+        <textarea name="" id="business-add" placeholder="address"></textarea>
+        <textarea name="" id="about" placeholder="about"></textarea>
+
+        <input type="text" id="number" placeholder="number">
+        <input type="checkbox" checked id="terms-and-cond" class="checkbox">
+        <label for="terms-and-cond">agree to our <a href="#">terms and conditions</a></label>
+        <br>
+        <input type="checkbox" checked name="" id="legitInfo" class="checkbox">
+        <label for="legitInfo">all information is legit</label>
+        <button class="submit-btn" id="apply-form-btn">apply</button>
+
+    </div>
+
+    <div class="product-listing ">
+        <div class="add-product">
+            <p class="add-product-title">add product</p>
+            <button class="btn">add products</button>
+        </div>
+       <!--  <img src="img/no-products.png" class="no-product-image" alt=""> -->
+    </div>
+    <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="tag">Draft</span>
+                    <img src="img/card1.png" class="product-thumb" alt="">
+                    <button class="card-action-btn edit-btn"><img src="img/edit.png"></button>
+                    <button class="card-action-btn open-btn"><img src="img/open.png"></button>
+                    <button class="card-action-btn delete-popup-btn"><img src="img/delete.png"></button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+    </div>
+
+    <script src="js/token.js"></script>
+    <script src="js/seller.js"></script>
+
+</body>
+
+</html>

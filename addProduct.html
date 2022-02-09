@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pappa: Add Product</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/addProduct.css">
+</head>
+
+<body>
+
+    <img src="img/loader.gif" class="loader" alt="">
+
+    <div class="alert-box">
+        <img src="img/error.png" alt="" class="alert-img">
+        <p class="alert-msg">Error message</p>
+    </div>
+
+    <img src="img/dark-logo.png" alt="" class="logo">
+
+    <div class="form">
+        <input type="text" id="product-name" maxlength="50" placeholder="product name">
+        <input type="text" id="short-des" placeholder="short line about the product">
+        <textarea id="des" placeholder="detail description"></textarea>
+
+        <div class="product-info">
+            <div class="product-image">
+                <p class="text">product image</p>
+            </div>
+            <div class="upload-image-sec">
+                <p class="text"><img src="img/camera.png" alt="">upload image</p>
+                <div class="upload-catalouge">
+                    <input type="file" name="" id="first-file-upload-btn" hidden class="fileupload">
+                    <label for="first-file-upload-btn" class="upload-image"></label>
+                    <input type="file" name="" id="second-file-upload-btn" hidden class="fileupload">
+                    <label for="second-file-upload-btn" class="upload-image"></label>
+                    <input type="file" name="" id="third-file-upload-btn" hidden class="fileupload">
+                    <label for="third-file-upload-btn" class="upload-image"></label>
+                    <input type="file" name="" id="fourth-file-upload-btn" hidden class="fileupload">
+                    <label for="fourth-file-upload-btn" class="upload-image"></label>
+                </div>
+
+            </div>
+            <div class="select-sizes">
+                <p class="text">size available</p>
+                <div class="sizes">
+                    <input type="checkbox" id="xxxl" value="xs" class="size-checkbox">
+                    <input type="checkbox" id="s" value="s" class="size-checkbox">
+                    <input type="checkbox" id="m" value="m" class="size-checkbox">
+                    <input type="checkbox" id="l" value="l" class="size-checkbox">
+                    <input type="checkbox" id="xl" value="xl" class="size-checkbox">
+                    <input type="checkbox" id="xxl" value="xxl" class="size-checkbox">
+                    <input type="checkbox" id="xs" value="xxxl" class="size-checkbox">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="product-price">
+            <input type="number" id="actual-price" placeholder="actual-price">
+            <input type="number" id="discount" placeholder="discount percentage">
+            <input type="number" id="sell-price" placeholder="sell price">
+
+        </div>
+
+        <input type="number" id="stock" min="20" placeholder="item in sstocks (minium 20)">
+
+        <textarea name="" id="tags"
+            placeholder="Enter categories here, for example - Men, Jeans, Blue Jeans, Rough jeans (you sholud add men or women at start"></textarea>
+        <input type="checkbox" class="checkbox" id="tac" checked>
+        <label for="tac"> pappa take 30% from your total sell</label>
+        <div class="buttons">
+            <button class="btn" id="add-btn">add product</button>
+            <button class="btn" id="save-btn">save draft</button>
+        </div>
+    </div>
+
+    <script src="js/token.js"></script>
+    <script src="js/addProduct.js"></script>
+</body>
+
+</html>
